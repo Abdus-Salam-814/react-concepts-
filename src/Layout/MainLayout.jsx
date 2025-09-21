@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../component/Navbar/NavBar";
+import Footer from "../component/Footer/Footer";
 
 const MainLayout = () => {
     return (
@@ -17,11 +18,7 @@ const MainLayout = () => {
 
 
             {/* Footer here */}
-<footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 mt-1.5">
-  <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-  </aside>
-</footer>
+          <Footer></Footer>
 
 
 

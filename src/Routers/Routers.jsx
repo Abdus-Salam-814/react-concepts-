@@ -3,24 +3,35 @@ import MainLayout from "../Layout/MainLayout";
 
 const routers = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <div>404 page not found</div>,
     children: [
       {
-    path: '/home',
-    element: <h1>This is home</h1>
-  },
-  { path: '/about', 
-    element: <h1>This is about</h1>
-  },{
-    path: '/contact',
-    element: <h1>This is contact</h1>
-  }
-    ]
-  },
-  
-])
+        path: "/",
+        element: (
+          <div>
+            Home lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quisquam, quam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quisquam, quam. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quisquam, quam.
+          </div>
+        ),
+      },
 
+      {
+        path: "/coffees",
+        element: <div>Coffees</div>,
+      },
 
+      {},
+      {
+        path: "/dashboard",
+
+        element: <div>Dashboard</div>,
+      },
+    ],
+  },
+]);
 
 export default routers;
