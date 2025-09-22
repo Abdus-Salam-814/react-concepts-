@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
 
 const NavBar = () => {
 
@@ -23,13 +24,14 @@ const NavBar = () => {
         {navKinkList}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <Link to={'/'} className="btn btn-ghost text-xl">Coffee Book</Link>
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
      
      {navKinkList}
       
+     
     </ul>
   </div>
   
