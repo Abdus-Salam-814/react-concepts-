@@ -10,7 +10,8 @@ const MainLayout = () => {
               <NavBar></NavBar>
            </div>
             {/* Outlet here */}
-              <div className="min-h-[calc(100vh-125px)]">
+              <div className="min-h-[calc(100vh-125px)] mt-16
+            ">
                 
                 <Outlet></Outlet>
                 

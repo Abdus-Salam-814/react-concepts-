@@ -1,9 +1,14 @@
+import Banner from "../component/Banner/Banner";
+import Heading from "../component/Headding/Heading";
+
 const Home = () => {
     return (
         <div >
-          <h1>Welcome to Home Page</h1>  
+          
         {/* Banner here */}
+        <Banner></Banner>
         {/* heading */}
+        <Heading title={'Our Popular Products'} subtitel={'You can explore your favorite coffee'}></Heading>    
         {/* categories  tab section */}
         {/* Dynamic nested component */}
 
