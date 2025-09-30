@@ -1,12 +1,17 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Link } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Home from "../Pageses/Home";
+import Error from "../component/Error/Error";
 
 const routers = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-    errorElement: <div>404 page not found</div>,
+    errorElement: <div className="text-center mt-32 space-y-6">
+      <h2>Sorry! Page Not Found</h2>
+      <Link className="btn btn-warning" to={'/'}>Go to Home</Link>
+     
+    </div>,
     children: [
       {
         // path: "/",

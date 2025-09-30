@@ -1,6 +1,7 @@
 import Banner from "../component/Banner/Banner";
 import Heading from "../component/Headding/Heading";
 
+
 const Home = () => {
     return (
         <div >
@@ -8,8 +9,9 @@ const Home = () => {
         {/* Banner here */}
         <Banner></Banner>
         {/* heading */}
-        <Heading title={'Our Popular Products'} subtitel={'You can explore your favorite coffee'}></Heading>    
+        <Heading title={'Browse Coffees by Category'} subtitel={'Choose your desired coffee category to browse through specific coffees that fit in your taste.'}></Heading>    
         {/* categories  tab section */}
+      
         {/* Dynamic nested component */}
 
         </div>
