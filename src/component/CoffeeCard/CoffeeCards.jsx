@@ -1,0 +1,9 @@
+const CoffeeCards = () => {
+    return (
+        <div>
+            Coffee Cards............................. {}
+        </div>
+    );
+};
+
+export default CoffeeCards;
