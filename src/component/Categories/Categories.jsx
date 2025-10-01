@@ -1,9 +1,12 @@
-import { Link, NavLink, useParams } from "react-router-dom";
+import { Link, NavLink, useLoaderData, useParams } from "react-router-dom";
 
 const Categories = ({categories}) => {
 
-    const {category} = useParams();
-    console.log(category);
+    // const {category} = useParams();
+    // console.log(category);
+
+    const data = useLoaderData();
+    console.log(data);
 
     return (
         <div className="text-center space-x-4 my-8 " >
@@ -14,6 +17,11 @@ const Categories = ({categories}) => {
 
             }
             </div>
+
+            
+
+
+
         </div>
     );
 };
