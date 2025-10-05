@@ -4,8 +4,8 @@ const Card = ({ coffee }) => {
   return (
     <div>
       <div className="card bg-base-200 shadow-sm">
-        <figure>
-          <img src={`${image}`} alt="" />
+        <figure className="h-56">
+          <img className="object-cover" src={`${image}`} alt="" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
@@ -33,3 +33,5 @@ const Card = ({ coffee }) => {
 };
 
 export default Card;
+
+

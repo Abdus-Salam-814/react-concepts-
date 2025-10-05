@@ -32,7 +32,7 @@ const CoffeeCard = () => {
     </div>
 
     <div className="p-12">
-                 <button onClick={()=> navegate('/coffees') } className="btn btn-warning ">All vew</button>
+                 <button onClick={ () => navegate('/coffees')  } className="btn btn-warning ">All vew</button>
 
     </div>
     

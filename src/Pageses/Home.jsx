@@ -5,8 +5,8 @@ import Categories from "../component/Categories/Categories";
 
 const Home = () => {
 
-    const categories = useLoaderData();
-    console.log(categories);
+    const categories = useLoaderData()
+   
 
     return (
         <div >
